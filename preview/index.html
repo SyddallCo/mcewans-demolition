@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<!-- Link preview card when the /preview/ link is texted (Tom, 13 Oct 2026: the card was only on the live page,
+     but since 30 Sept the link we send is /preview/, so texts showed no picture). og.jpg comes from og_card.py. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="McEwan&#x27;s Demolition">
+<meta property="og:description" content="Your new website design, on a computer and on a phone.">
+<meta property="og:url" content="https://www.5startradie.com.au/mcewans-demolition/preview/">
+<meta property="og:image" content="https://www.5startradie.com.au/mcewans-demolition/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.5startradie.com.au/mcewans-demolition/img/og.jpg">
+<!-- 5ST GA4, same property as the mockup page and the fixes pages (8 Oct 2026). patch.py never
+     touches the preview rig, so the tag has to live in this file or every new preview is born blind. -->
+<script>
+(function(){var me=false;try{if(location.hash==="#me")localStorage.setItem("fst_me","1");me=localStorage.getItem("fst_me")==="1";}catch(e){}
+if(me)return;
+var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-WF8EP9V5K6";document.head.appendChild(s);
+window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};
+gtag("js",new Date());gtag("config","G-WF8EP9V5K6");
+gtag("set",{"page_type":"mockup-preview","prospect":"mcewans-demolition"});
+})();
+</script>
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yecx75c03w");
+</script>
+<!-- 5ST prospect tracking -->
+<script>(function(){var s="mcewans-demolition",t="mockup-preview";window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};clarity("set","prospect",s);clarity("set","page_type",t);clarity("identify",s,null,null,s);try{var q=new URLSearchParams(location.search),p=q.get("p")||q.get("utm_source");if(p)clarity("set","link",p);}catch(e){}})();</script>
+
+<!-- 5ST view log -->
+<script>(function(){try{
+if(/bot|crawl|spider|headless|lighthouse|facebookexternalhit|whatsapp|slackbot|telegram|twitterbot|linkedinbot|skypeuri|discord|preview/i.test(navigator.userAgent))return;
+if(navigator.webdriver)return;
+var S="mcewans-demolition",T="mockup-preview",E="/mt/c.php",fr=(window.top!==window.self)?1:0;
+var L=null;try{L=window.localStorage}catch(e){}
+function g(k){try{return L&&L.getItem(k)}catch(e){return null}}function s(k,v){try{L&&L.setItem(k,v)}catch(e){}}
+var q=new URLSearchParams(location.search);if(q.get("me")==="1")s("5st_me","1");
+var vid=g("5st_vid");if(!vid){vid=Math.random().toString(36).slice(2,12);s("5st_vid",vid)}
+var me=g("5st_me")?1:0,sid=Math.random().toString(36).slice(2,10),p=q.get("p")||q.get("utm_source")||"";
+var seq=0,vis=0,act=0,mx=0,li=Date.now(),secs={},cur={},sent=-1;
+function sc(){var h=document.documentElement,b=document.body||h,m=Math.max(h.scrollHeight,b.scrollHeight)-window.innerHeight,v=m>0?Math.round(100*window.scrollY/m):100;if(v>mx)mx=Math.min(100,v)}
+function poke(){li=Date.now()}
+["scroll","mousemove","touchstart","keydown","click","wheel"].forEach(function(e){window.addEventListener(e,function(){poke();if(e==="scroll")sc()},{passive:true})});
+function send(ev,x){seq++;var d={s:S,t:T,sid:sid,vid:vid,me:me,p:p,ev:ev,seq:seq,vis:vis,act:act,mx:mx,secs:secs,ref:document.referrer,w:window.innerWidth,path:location.pathname+location.hash,fr:fr};if(x)d.x=x;
+var b=JSON.stringify(d);try{if(navigator.sendBeacon&&navigator.sendBeacon(E,new Blob([b],{type:"text/plain"})))return}catch(e){}
+try{fetch(E,{method:"POST",body:b,keepalive:true,headers:{"Content-Type":"text/plain"}})}catch(e){}}
+try{var io=new IntersectionObserver(function(es){es.forEach(function(en){var id=en.target.id;if(en.isIntersecting)cur[id]=1;else delete cur[id]})},{threshold:0.35});
+var scan=function(){document.querySelectorAll("section[id],header[id],footer[id],[data-section]").forEach(function(el){if(!el.id&&el.dataset.section)el.id=el.dataset.section;if(el.id&&el.id.indexOf("{")<0)io.observe(el)})};document.addEventListener("DOMContentLoaded",scan);setTimeout(scan,2500);setTimeout(scan,7000)}catch(e){}
+setInterval(function(){if(document.visibilityState!=="visible")return;vis++;if(Date.now()-li<30000){act++;for(var k in cur)secs[k]=(secs[k]||0)+1}sc();
+if(vis%10===0&&act!==sent){sent=act;send("hb")}},1000);
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a,button");if(!a)return;var h=a.getAttribute("href")||"";send("click",(h+" | "+(a.innerText||"").trim()).slice(0,160))},true);
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")send("hide")});
+window.addEventListener("pagehide",function(){send("end")});
+send("start");
+}catch(e){}})();</script>
+
+
+<script>if(Math.min(screen.width,window.innerWidth)<700&&!/[?&]rig=1/.test(location.search))location.replace("/mcewans-demolition/");</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>McEwan&#x27;s Demolition | Website preview</title>
+<style>
+  :root{--bg:#EEF0EC;--ink:#1C2320;--muted:#5B645F;--accent:#40704A}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  header{max-width:1280px;margin:0 auto;padding:28px 20px 8px}
+  h1{font-size:clamp(22px,3vw,30px);margin:0 0 6px;letter-spacing:-.01em}
+  p{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+  a.live{display:inline-flex;align-items:center;gap:.3em;margin-top:14px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+  .stage{max-width:1280px;margin:0 auto;padding:20px;display:flex;gap:32px;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+  figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+  figcaption{font-size:14px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  .desk{background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.12);overflow:hidden}
+  .bar{height:34px;background:#E4E6E2;display:flex;align-items:center;gap:6px;padding:0 12px}
+  .bar i{width:10px;height:10px;border-radius:50%;background:#C9CCC7;display:block}
+  .phone{background:#111;border-radius:44px;padding:12px;box-shadow:0 10px 40px rgba(0,0,0,.2)}
+  .phone .screen{border-radius:32px;overflow:hidden;background:#fff}
+  .clip{overflow:hidden;position:relative}
+  iframe{border:0;display:block;transform-origin:0 0;background:#fff}
+</style>
+</head>
+<body>
+<header>
+  <h1>McEwan&#x27;s Demolition</h1>
+  <p>Your new homepage, shown on a computer and on a phone. Both scroll on their own.</p>
+  <a class="live" href="/mcewans-demolition/">Open the full site</a>
+</header>
+<div class="stage">
+  <figure id="f-desk"><figcaption>On a computer</figcaption>
+    <div class="desk"><div class="bar"><i></i><i></i><i></i></div>
+      <div class="clip" id="c-desk"><iframe id="i-desk" src="/mcewans-demolition/" width="1440" height="900" title="Homepage on a computer"></iframe></div>
+    </div>
+  </figure>
+  <figure id="f-phone"><figcaption>On a phone</figcaption>
+    <div class="phone"><div class="screen">
+      <div class="clip" id="c-phone"><iframe id="i-phone" src="/mcewans-demolition/" width="390" height="844" title="Homepage on a phone"></iframe></div>
+    </div></div>
+  </figure>
+</div>
+<script>
+function fit(){
+  var vw=Math.min(document.documentElement.clientWidth,1280)-40;
+  var narrow=vw<900;
+  var dW=narrow?vw:Math.max(480,vw-390-32-24);
+  var ds=Math.min(1,dW/1440);
+  var ps=Math.min(1,(narrow?vw-24:390)/390);
+  [['desk',1440,900,ds],['phone',390,844,ps]].forEach(function(a){
+    var f=document.getElementById('i-'+a[0]),c=document.getElementById('c-'+a[0]);
+    f.style.transform='scale('+a[3]+')';c.style.width=(a[1]*a[3])+'px';c.style.height=(a[2]*a[3])+'px';
+  });
+}
+window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
