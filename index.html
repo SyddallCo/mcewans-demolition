@@ -172,6 +172,17 @@ nav.main a:hover{color:var(--or2)}
 .trust b{color:var(--ink)}.trust small{display:block;color:var(--muted);font-size:14px;margin-top:3px}
 @media (max-width:980px){.trust .wrap{grid-template-columns:1fr 1fr}.trust .it:nth-child(3){padding-left:0;border-left:0}.trust .it:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media (max-width:767px){.trust .wrap{grid-template-columns:1fr}.trust .it,.trust .it+.it{padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}.trust .it:last-child{border-bottom:0}}
+/* trust card sits on the line between 01 and 02 (Tom 20 Oct) */
+.trust{background:transparent!important;padding:0!important;position:relative;z-index:5;margin:-62px 0}
+#services{padding-bottom:120px}#before-after{padding-top:120px}
+@media (max-width:980px){.trust{margin:-120px 0}#services{padding-bottom:160px}#before-after{padding-top:160px}}
+@media (max-width:767px){.trust{margin:-92px 0}#services{padding-bottom:124px}#before-after{padding-top:124px}
+.trust .wrap{grid-template-columns:1fr 1fr;padding:0 12px;margin-inline:max(16px,env(safe-area-inset-left,0px))}
+.trust .it,.trust .it+.it{padding:16px 6px;gap:10px;border-left:0;border-bottom:0}
+.trust .it:nth-child(even){padding-left:12px;border-left:1px solid var(--line)}
+.trust .it:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.trust .ic{width:38px;height:38px;border-radius:10px}.trust .ic .ico{width:20px;height:20px}
+.trust b{font-size:15px}.trust small{font-size:12px;line-height:1.3}}
 
 /* before after */
 .ba{background:var(--alt)}
